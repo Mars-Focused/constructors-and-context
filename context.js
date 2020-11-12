@@ -19,6 +19,15 @@
 
 //Code Here
 
+let user = {
+  username: 'Mars',
+  email: 'marsthecoder@outlook.com',
+  getUsername: function(){
+    return this.username
+  }
+}
+
+
 ////////// PROBLEM 2 //////////
 
 /*
