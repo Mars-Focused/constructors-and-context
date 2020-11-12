@@ -16,6 +16,11 @@
 
 // Code here
 
+function CarFactory(make, model) {
+  this.make = make
+  this.model = model
+}
+
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
@@ -25,6 +30,7 @@ function Employee(name, email, hireDate) {
     this.email = email;
     this.hireDate = hireDate;
   }
+
   
   // Do not edit the code above.
   
@@ -37,6 +43,8 @@ function Employee(name, email, hireDate) {
   
   ////////// PROBLEM 3 //////////
   
+  const bob = new Employee('Bob', 'bob@gmail.com', '01-02-98')
+
   // Do not edit the code below.
   
   var prius = new Car('Toyota', 'Prius', 2011);
@@ -58,6 +66,20 @@ function Employee(name, email, hireDate) {
   
   // Code here
   
+  function Car(make, model, year){
+  
+    this.make = make
+    this.model = model
+    this.year = year
+    this.move = 0
+    
+    this.moveCar= function(){
+      this.move +=10
+      return this.move
+    }
+  }
+  
+
   ////////// PROBLEM 4 //////////
   
   /*
