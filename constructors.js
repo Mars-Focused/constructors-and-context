@@ -114,20 +114,25 @@ function Employee(name, email, hireDate) {
     
     // Code here
     
+    //THIS STILL NEEDS TO BE FINISHED <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
     function User(name, age, email, savedPosts){
       this.name = name
       this.age = age
       this.email = email
       this.savedPosts = savedPosts
     }
-      
+    
     User.prototype.addSavedPost = function(id, title, rating){
-      this.id = id
-      this.title = title
-      this.rating = rating
-      return this.savedPosts
+      let post = {
+        id: id,
+        title: title,
+        rating: rating,
+      }
+      this.savedPosts.push(post)
     }
-
+    
+    //note to self .push always needs parentheses.
     
     ////////// PROBLEM 6 //////////
     
@@ -135,6 +140,8 @@ function Employee(name, email, hireDate) {
     // Write a prototype method for the User constructor function named removeSavedPost that will take in one number parameter representing the post id. Use this id to find and remove the matching object in the savedPosts array.
     
     // Code here
+    
+
     
     ////////// PROBLEM 7 //////////
     
